@@ -1,0 +1,2 @@
+https://blog.logrocket.com/deploying-react-apps-github-pages/
+https://dev.to/ajayupreti/how-to-use-push-notifications-in-react-a-step-by-step-guide-341d#:~:text=Open%20your%20terminal%20and%20run,with%20your%20preferred%20project%20name.&text=Service%20workers%20are%20a%20fundamental,push%20notifications%20in%20web%20applications.
