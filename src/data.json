@@ -1,8 +1,8 @@
 {
-    "week1":[
-        {
-            "day":"Monday",
-            "person":"Melusi"
-        }
-    ]
+    "id": 1,
+    "gender": "Female",
+    "first_name": "Helen",
+    "last_name": "Nguyen",
+    "email": "hnguyen0@bloomberg.com",
+    "ip_address": "227.211.25.18"
 }
