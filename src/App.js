@@ -5,10 +5,11 @@ import { BrowserRouter,Route, Routes } from 'react-router-dom';
 import EditList from './EditList';
 import Home from './Home';
 import Contact from './Contact';
-
+import { getUsers } from './helpers/getData';
 function App() {
-
-
+  let data = [];
+  getUsers().then(x => data = x);
+  console.log(data)
   return (
     <div>
      <BrowserRouter>

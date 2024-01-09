@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 
  function Home(){
+    
     return (
         <div>
             <h1>Current roster</h1>
