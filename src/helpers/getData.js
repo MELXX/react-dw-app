@@ -12,7 +12,7 @@ const app = initializeApp(firebaseConfig);
 
 // Get a list of cities from your database
 export async function getUsers() {
-  console.log(firebaseConfig)
+  //console.log(firebaseConfig)
   const db = getFirestore(app);
 
   const usersCol = collection(db, 'users');

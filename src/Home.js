@@ -1,9 +1,22 @@
 import { Link } from 'react-router-dom';
 import { getUsers } from './helpers/getData';
+import { getToken } from './helpers/backblazeService';
 import { useState,useEffect } from 'react';
 
  function Home(){
-    const [data,dataChanger] = useState([{name:""}]);
+    const [data,dataChanger] = useState([]);
+
+    useEffect(()=>{
+      getToken()
+      .then(response =>{
+        console.error(response)
+      })
+      .catch(error => {
+        console.error(error);
+      });  
+    }
+    ,[])
+
 
     useEffect(() => {
       getUsers().then(response => {
@@ -13,7 +26,6 @@ import { useState,useEffect } from 'react';
           console.error(error);
         });  
     }, []);
-    console.log(data)
     return (
         <div>
             <h1>Current Users</h1>
